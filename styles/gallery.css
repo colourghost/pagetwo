@@ -1,0 +1,22 @@
+section {
+  margin-bottom: 158px;
+}
+section .thumb-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 90%;
+  margin-left: 5%;
+}
+section .thumb-container > img {
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 9px -5px;
+  cursor: pointer;
+}
+section .modal > img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 20px;
+}

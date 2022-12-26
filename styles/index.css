@@ -1,0 +1,24 @@
+nav {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.twice-desktop {
+  display: block;
+  width: 100%;
+  margin-top: -23%;
+}
+@media (max-width: 1200px) {
+  .twice-desktop {
+    display: none;
+  }
+}
+
+.twice-mobile {
+  display: none;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .twice-mobile {
+    display: block;
+  }
+}
