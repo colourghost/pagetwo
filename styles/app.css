@@ -15,10 +15,10 @@ nav {
 }
 @media (max-width: 1200px) {
   nav {
-    height: 60px;
+    height: 80px;
   }
 }
-nav > div {
+nav .desktop-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,21 +27,63 @@ nav > div {
   margin-left: 20%;
 }
 @media (max-width: 1600px) {
-  nav > div {
+  nav .desktop-nav {
     width: 80%;
     margin-left: 10%;
   }
 }
 @media (max-width: 1200px) {
-  nav > div {
+  nav .desktop-nav {
     display: none;
   }
 }
-nav > div > a {
+nav .desktop-nav > a {
   text-decoration: none;
   font-size: 28px;
   color: black;
+}
+nav .mobile-nav {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+@media (min-width: 1201px) {
+  nav .mobile-nav {
+    display: none;
+  }
+}
+nav .mobile-nav .hamburger {
+  width: 40px;
+  margin-right: 5%;
   cursor: pointer;
+}
+nav .mobile-nav .menu {
+  position: absolute;
+  display: none;
+  top: 80px;
+  width: 100vw;
+  padding: 5% 0;
+  border-top: 1px solid rgb(168, 168, 168);
+  border-bottom: 1px solid rgb(168, 168, 168);
+  background: white;
+}
+nav .mobile-nav .menu > a {
+  display: block;
+  padding: 5%;
+  text-align: right;
+  text-decoration: none;
+  font-size: 26px;
+  color: black;
+}
+
+.active {
+  display: block !important;
+}
+
+.bg-white {
+  background: white;
 }
 
 .modal {

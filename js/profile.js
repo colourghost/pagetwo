@@ -15,7 +15,7 @@ import { members } from './data/members.js'
   }
 
   const addThumbListeners = _ => {
-    document.querySelectorAll('img').forEach((thumb, index) => {
+    document.querySelectorAll('.thumb-container > img').forEach((thumb, index) => {
       thumb.addEventListener('click', _ => {
         renderModal(index)
       })
