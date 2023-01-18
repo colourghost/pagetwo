@@ -39,17 +39,19 @@ import { albums } from './data/albums.js'
   }
 
   const tracklist = album => {
+    let i = 0
     let markup = ''
     album.tracklist.forEach(track => {
-      if (track.includes('•')) {
-        markup +=
-         `<div>
-            <span>${track.substring(0, track.indexOf('•'))}</span>
-            <span class="author">${track.slice(track.indexOf('•'))}</span>
-          <div>`
+      i = track.indexOf('•')
+      if (i === -1) {
+        markup += `<div>${track}</div>`
       }
       else {
-        markup += `<div>${track}</div>`
+        markup +=
+         `<div>
+            <span>${track.slice(0, i)}</span>
+            <span class="author">${track.slice(i)}</span>
+          </div>`
       }
     })
     return markup
