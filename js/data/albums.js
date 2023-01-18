@@ -158,7 +158,7 @@ export const albums = [
       'MAKE ME GO • Nayeon',
       'SHADOW',
       'DON\'T CALL ME AGAIN',
-      'SWEET SUMMER DAY • Jeongyeon and Chaeyoung'
+      'SWEET SUMMER DAY • Jeongyeon, Chaeyoung'
     ]
   ),
   new Album(
@@ -307,9 +307,9 @@ export const albums = [
     [
       'Dance The Night Away',
       'CHILLAX',
-      'Shot thru the heart • Momo, Sana, and Mina',
+      'Shot thru the heart • Momo, Sana, Mina',
       'What is Love?',
-      'SWEET TALKER • Jeongyeon and Chaeyoung',
+      'SWEET TALKER • Jeongyeon, Chaeyoung',
       'HO! • Jihyo',
       'DEJAVU',
       'SAY YES',
@@ -322,7 +322,7 @@ export const albums = [
     'whatislove',
     [
       'What is Love?',
-      'SWEET TALKER • Jeongyeon and Chaeyoung',
+      'SWEET TALKER • Jeongyeon, Chaeyoung',
       'HO! • Jihyo',
       'DEJAVU',
       'SAY YES',
@@ -338,11 +338,11 @@ export const albums = [
       'Merry & Happy',
       'LIKEY',
       'TURTLE',
-      'MISSING U • Dahyun and Chaeyoung',
+      'MISSING U • Dahyun, Chaeyoung',
       'WOW',
       'FFW',
       'DING DONG',
-      '24/7 • Nayeon and Jihyo',
+      '24/7 • Nayeon, Jihyo',
       'LOOK AT ME',
       'ROLLIN\'',
       'LOVE LINE • Jeongyeon',
@@ -358,11 +358,11 @@ export const albums = [
     [
       'LIKEY',
       'TURTLE',
-      'MISSING U • Dahyun and Chaeyoung',
+      'MISSING U • Dahyun, Chaeyoung',
       'WOW',
       'FFW',
       'DING DONG',
-      '24/7 • Nayeon and Jihyo',
+      '24/7 • Nayeon, Jihyo',
       'LOOK AT ME',
       'ROLLIN\'',
       'LOVE LINE • Jeongyeon',
@@ -392,7 +392,7 @@ export const albums = [
       'THREE TIMES A DAY',
       'Only YOU',
       'HOLD ME TIGHT',
-      'EYE EYE EYES • Jihyo and Chaeyoung',
+      'EYE EYE EYES • Jihyo, Chaeyoung',
       'SOMEONE LIKE ME'
     ]
   ),

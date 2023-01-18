@@ -51,7 +51,7 @@ section .modal .grid-container > div .title {
   section .modal .grid-container > div .title {
     display: block;
     margin-top: 3vw;
-    font-size: 8.6vw;
+    font-size: 9.4vw;
   }
 }
 section .modal .grid-container > div .release {
@@ -62,8 +62,8 @@ section .modal .grid-container > div .release {
 @media (max-width: 1200px) {
   section .modal .grid-container > div .release {
     display: block;
-    margin: 0 0 3vw;
-    font-size: 4vw;
+    margin: 0;
+    font-size: 5.2vw;
   }
 }
 section .modal .grid-container > div .tracklist {
@@ -73,7 +73,8 @@ section .modal .grid-container > div .tracklist {
 }
 @media (max-width: 1200px) {
   section .modal .grid-container > div .tracklist {
-    font-size: 4.5vw;
+    margin-top: 4.5vw;
+    font-size: 5.2vw;
   }
 }
 section .modal .grid-container > div .tracklist .author {
