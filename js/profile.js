@@ -29,9 +29,9 @@ import { members } from './data/members.js'
      `<div class="grid-container">
         <img src="images/profile/${members[i].name}.jpg">
         <div class="bio">
-          <div>${members[i].name}</div>
-          <div>${members[i].birth}</div>
-          <div>${members[i].nation}</div>
+          <div class="name">${members[i].name}</div>
+          <div class="birth">${members[i].birth}</div>
+          <div class="nation">${members[i].nation}</div>
         </div>
         <iframe src="https://www.youtube.com/embed/${members[i].id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>`

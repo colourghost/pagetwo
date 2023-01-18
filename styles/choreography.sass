@@ -19,8 +19,12 @@ section
         cursor: pointer
       > div
         margin-top: 5px
-        font-size: 20px
+        font-size: 1.1vw
         text-align: center
+        @media (max-width: 1200px)
+          font-size: 2.5vw
+        @media (max-width: 500px)
+          font-size: 5vw
   .modal
     > iframe
       width: 60vw
