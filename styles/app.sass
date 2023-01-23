@@ -18,7 +18,7 @@ nav
     justify-content: space-between
     align-items: center
     width: 60%
-    height: 158px
+    height: 8.2vw
     margin-left: 20%
     @media (max-width: 1600px)
       width: 80%
@@ -27,7 +27,7 @@ nav
       display: none
     > a
       text-decoration: none
-      font-size: 28px
+      font-size: 1.46vw
       color: black
   .mobile-nav
     position: relative
@@ -35,32 +35,29 @@ nav
     justify-content: flex-end
     align-items: center
     height: 80px
+    padding: 0 5%
     @media (min-width: 1201px)
       display: none
     .hamburger
       width: 40px
-      margin-right: 5%
       cursor: pointer
     .menu
       position: absolute
       display: none
-      top: 80px
+      top: 55px
+      left: 0
       width: 100vw
-      padding: 5% 0
+      padding: 5%
       background: white
       > a
         display: block
-        padding: 5%
+        padding: 5% 0
         text-align: right
         text-decoration: none
         font-size: 26px
         color: black
-
-.active
-  display: block !important
-
-.bg-white
-  background: white
+    .active
+      display: block
 
 .modal
   position: fixed
@@ -73,3 +70,6 @@ nav
   height: 100%
   background: rgba(0, 0, 0, 0.9)
   overflow: auto
+
+iframe
+  background: black
