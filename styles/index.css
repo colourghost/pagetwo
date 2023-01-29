@@ -3,9 +3,8 @@ nav {
 }
 
 .twice-desktop {
-  display: block;
   width: 100%;
-  margin-top: -23%;
+  margin-top: -25%;
 }
 @media (max-width: 1200px) {
   .twice-desktop {

@@ -20,9 +20,6 @@ nav
     width: 60%
     height: 8.2vw
     margin-left: 20%
-    @media (max-width: 1600px)
-      width: 80%
-      margin-left: 10%
     @media (max-width: 1200px)
       display: none
     > a
@@ -31,13 +28,13 @@ nav
       color: black
   .mobile-nav
     position: relative
-    display: flex
+    display: none
     justify-content: flex-end
     align-items: center
     height: 80px
     padding: 0 5%
-    @media (min-width: 1201px)
-      display: none
+    @media (max-width: 1200px)
+      display: flex
     .hamburger
       width: 40px
       cursor: pointer
@@ -58,6 +55,11 @@ nav
         color: black
     .active
       display: block
+
+.thumb-container
+  width: 96%
+  margin-bottom: 8.2vw
+  margin-left: 2%
 
 .modal
   position: fixed
