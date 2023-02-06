@@ -11,7 +11,7 @@ import { videos } from './data/videos.js'
       markup +=
        `<div>
           <img src="images/video/${video.image}.jpg">
-          <div>${video.title}</div>
+          <div style="background:rgba(255,255,255,0.85)">${video.title}</div>
         </div>`
     })
     thumbContainer.innerHTML = markup
