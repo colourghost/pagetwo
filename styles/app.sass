@@ -10,27 +10,29 @@ body
 
 nav
   position: relative
+  display: flex
+  justify-content: center
   z-index: 10
   @media (max-width: 1200px)
     height: 80px
-  .desktop-nav
+  .desktop
     display: flex
     justify-content: space-between
     align-items: center
     width: 60%
     height: 8.2vw
-    margin-left: 20%
     @media (max-width: 1200px)
       display: none
     > a
       text-decoration: none
       font-size: 1.46vw
       color: black
-  .mobile-nav
+  .mobile
     position: relative
     display: none
     justify-content: flex-end
     align-items: center
+    width: 100%
     height: 80px
     padding: 0 5%
     @media (max-width: 1200px)
@@ -56,10 +58,12 @@ nav
     .active
       display: block
 
+section
+  display: flex
+  justify-content: center
+
 .thumb-container
   width: 96%
-  margin-bottom: 8.2vw
-  margin-left: 2%
 
 .modal
   position: fixed
@@ -75,3 +79,6 @@ nav
 
 iframe
   background: black
+
+footer
+  height: 8.2vw

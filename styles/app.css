@@ -11,6 +11,8 @@ body {
 
 nav {
   position: relative;
+  display: flex;
+  justify-content: center;
   z-index: 10;
 }
 @media (max-width: 1200px) {
@@ -18,42 +20,42 @@ nav {
     height: 80px;
   }
 }
-nav .desktop-nav {
+nav .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 60%;
   height: 8.2vw;
-  margin-left: 20%;
 }
 @media (max-width: 1200px) {
-  nav .desktop-nav {
+  nav .desktop {
     display: none;
   }
 }
-nav .desktop-nav > a {
+nav .desktop > a {
   text-decoration: none;
   font-size: 1.46vw;
   color: black;
 }
-nav .mobile-nav {
+nav .mobile {
   position: relative;
   display: none;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   height: 80px;
   padding: 0 5%;
 }
 @media (max-width: 1200px) {
-  nav .mobile-nav {
+  nav .mobile {
     display: flex;
   }
 }
-nav .mobile-nav .hamburger {
+nav .mobile .hamburger {
   width: 40px;
   cursor: pointer;
 }
-nav .mobile-nav .menu {
+nav .mobile .menu {
   position: absolute;
   display: none;
   top: 55px;
@@ -62,7 +64,7 @@ nav .mobile-nav .menu {
   padding: 5%;
   background: white;
 }
-nav .mobile-nav .menu > a {
+nav .mobile .menu > a {
   display: block;
   padding: 5% 0;
   text-align: right;
@@ -70,14 +72,17 @@ nav .mobile-nav .menu > a {
   font-size: 26px;
   color: black;
 }
-nav .mobile-nav .active {
+nav .mobile .active {
   display: block;
+}
+
+section {
+  display: flex;
+  justify-content: center;
 }
 
 .thumb-container {
   width: 96%;
-  margin-bottom: 8.2vw;
-  margin-left: 2%;
 }
 
 .modal {
@@ -95,4 +100,8 @@ nav .mobile-nav .active {
 
 iframe {
   background: black;
+}
+
+footer {
+  height: 8.2vw;
 }
