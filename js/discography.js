@@ -8,7 +8,7 @@ import { albums } from './data/albums.js'
   const renderThumbs = _ => {
     let markup = ''
     albums.forEach(album => {
-      markup += `<img src="images/discography/${album.art}.jpg" width="1280" height="1280">`
+      markup += `<img src="images/discography/${album.art}.jpg">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()

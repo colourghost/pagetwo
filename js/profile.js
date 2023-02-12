@@ -8,7 +8,7 @@ import { members } from './data/members.js'
   const renderThumbs = _ => {
     let markup = ''
     members.forEach(member => {
-      markup += `<img src="images/profile/${member.name}.jpg" width="2668" height="4000">`
+      markup += `<img src="images/profile/${member.name}.jpg">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
