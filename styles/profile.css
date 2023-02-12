@@ -23,7 +23,6 @@
 }
 .modal .grid-container {
   display: grid;
-  grid-template-columns: -webkit-min-content auto;
   grid-template-columns: min-content auto;
   grid-template-rows: 1fr 1fr;
   -moz-column-gap: 5vh;
