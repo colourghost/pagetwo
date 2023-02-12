@@ -1,6 +1,6 @@
 .thumb-container {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   gap: 17px;
 }
 @media (max-width: 1200px) {
