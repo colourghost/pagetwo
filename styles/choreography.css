@@ -24,6 +24,7 @@
 }
 .thumb-container > div > img {
   width: 100%;
+  background: rgb(240, 240, 240);
 }
 .thumb-container > div > div {
   position: absolute;

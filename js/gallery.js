@@ -8,7 +8,7 @@ import { photos } from './data/photos.js'
   const renderThumbs = _ => {
     let markup = ''
     photos.forEach(photo => {
-      markup += `<img src="images/gallery/${photo.title}.webp" width="${photo.width}" height="${photo.height}">`
+      markup += `<img src="images/gallery/${photo.title}.webp" width="${photo.width}" height="${photo.height}" alt="${photo.title}">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
@@ -25,7 +25,7 @@ import { photos } from './data/photos.js'
   const renderModal = i => {
     const div = document.createElement('div')
     div.classList.add('modal')
-    div.innerHTML = `<img src="images/gallery/${photos[i].title}.webp">`
+    div.innerHTML = `<img src="images/gallery/${photos[i].title}.webp" alt="${photos[i].title}">`
     section.appendChild(div)
     addModalListener(div)
   }

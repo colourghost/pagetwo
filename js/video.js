@@ -10,7 +10,7 @@ import { videos } from './data/videos.js'
     videos.forEach(video => {
       markup +=
        `<div>
-          <img src="images/video/${video.image}.jpg">
+          <img src="images/video/${video.image}.jpg" alt="${video.title}">
           <div style="background:rgba(255,255,255,0.85)">${video.title}</div>
         </div>`
     })

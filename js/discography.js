@@ -8,7 +8,7 @@ import { albums } from './data/albums.js'
   const renderThumbs = _ => {
     let markup = ''
     albums.forEach(album => {
-      markup += `<img src="images/discography/${album.art}.jpg">`
+      markup += `<img src="images/discography/${album.art}.jpg" alt="${album.title}">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
@@ -27,7 +27,7 @@ import { albums } from './data/albums.js'
     div.classList.add('modal')
     div.innerHTML =
      `<div class="grid-container">
-        <img src="images/discography/${albums[i].art}.jpg">
+        <img src="images/discography/${albums[i].art}.jpg" alt="${albums[i].title}">
         <div>
           <div class="title">${albums[i].title}</div>
           <div class="release">${albums[i].release}</div>

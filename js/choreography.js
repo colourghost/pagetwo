@@ -10,7 +10,7 @@ import { choreos } from './data/choreos.js'
     choreos.forEach(choreo => {
       markup +=
        `<div>
-          <img src="images/choreography/${choreo.image}.jpg">
+          <img src="images/choreography/${choreo.image}.jpg" alt="${choreo.title}">
           <div>${choreo.title}</div>
         </div>`
     })
