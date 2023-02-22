@@ -19,7 +19,7 @@
 @media (max-width: 1200px) {
   .modal {
     align-items: flex-start;
-    padding: 5%;
+    padding: 2%;
   }
 }
 .modal .grid-container {

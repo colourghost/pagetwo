@@ -56,7 +56,7 @@
 }
 @media (max-width: 1200px) {
   .modal > iframe {
-    width: 90vw;
-    height: 50.625vw;
+    width: 96vw;
+    height: 54vw;
   }
 }
