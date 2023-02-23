@@ -5,16 +5,6 @@ function Photo(title, width, height) {
 }
 
 export const photos = [
-  new Photo('nayeon9', '3000', '4200'),
-  new Photo('jeongyeon9', '3000', '4200'),
-  new Photo('momo9', '3000', '4200'),
-  new Photo('sana9', '3000', '4200'),
-  new Photo('jihyo9', '3000', '4200'),
-  new Photo('mina9', '3000', '4200'),
-  new Photo('dahyun9', '3000', '4200'),
-  new Photo('chaeyoung9', '3000', '4200'),
-  new Photo('tzuyu9', '3000', '4200'),
-  new Photo('twice9', '4200', '3000'),
   new Photo('nayeon8', '1200', '857'),
   new Photo('jeongyeon8', '1000', '1400'),
   new Photo('momo8', '1000', '1400'),
