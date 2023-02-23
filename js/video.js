@@ -5,17 +5,18 @@ import { videos } from './data/videos.js'
   const section = document.querySelector('section')
   const thumbContainer = document.querySelector('.thumb-container')
 
-  const renderThumbs = _ => {
+  const mountThumbs = _ => {
     let markup = ''
-    videos.forEach(video => {
+    videos.forEach((video, index) => {
       markup +=
        `<div>
-          <img src="images/video/${video.image}.jpg" alt="${video.title}">
+          <img id="${index}" alt="${video.title}">
           <div style="background:rgba(255,255,255,0.85)">${video.title}</div>
         </div>`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
+    renderImages()
   }
 
   const addThumbListeners = _ => {
@@ -40,6 +41,17 @@ import { videos } from './data/videos.js'
     })
   }
 
-  renderThumbs()
+  const renderImages = (i = 0) => {
+    if (i < videos.length) {
+      let image = document.getElementById(i)
+      image.src = `images/video/${videos[i].image}.jpg`
+      image.addEventListener('load', _ => {
+        image.parentElement.style.opacity = 1
+        renderImages(++i)
+      })
+    }
+  }
+
+  mountThumbs()
 
 })()

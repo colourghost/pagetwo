@@ -5,13 +5,14 @@ import { albums } from './data/albums.js'
   const section = document.querySelector('section')
   const thumbContainer = document.querySelector('.thumb-container')
 
-  const renderThumbs = _ => {
+  const mountThumbs = _ => {
     let markup = ''
-    albums.forEach(album => {
-      markup += `<img src="images/discography/${album.art}.jpg" alt="${album.title}">`
+    albums.forEach((album, index) => {
+      markup += `<img id="${index}" alt="${album.title}">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
+    renderImages()
   }
 
   const addThumbListeners = _ => {
@@ -63,6 +64,17 @@ import { albums } from './data/albums.js'
     })
   }
 
-  renderThumbs()
+  const renderImages = (i = 0) => {
+    if (i < albums.length) {
+      let image = document.getElementById(i)
+      image.src = `images/discography/${albums[i].art}.jpg`
+      image.addEventListener('load', _ => {
+        image.style.opacity = 1
+        renderImages(++i)
+      })
+    }
+  }
+
+  mountThumbs()
 
 })()

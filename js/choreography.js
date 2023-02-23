@@ -5,17 +5,18 @@ import { choreos } from './data/choreos.js'
   const section = document.querySelector('section')
   const thumbContainer = document.querySelector('.thumb-container')
 
-  const renderThumbs = _ => {
+  const mountThumbs = _ => {
     let markup = ''
-    choreos.forEach(choreo => {
+    choreos.forEach((choreo, index) => {
       markup +=
        `<div>
-          <img src="images/choreography/${choreo.image}.jpg" alt="${choreo.title}">
+          <img id="${index}" alt="${choreo.title}">
           <div>${choreo.title}</div>
         </div>`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
+    renderImages()
   }
 
   const addThumbListeners = _ => {
@@ -40,6 +41,17 @@ import { choreos } from './data/choreos.js'
     })
   }
 
-  renderThumbs()
+  const renderImages = (i = 0) => {
+    if (i < choreos.length) {
+      let image = document.getElementById(i)
+      image.src = `images/choreography/${choreos[i].image}.jpg`
+      image.addEventListener('load', _ => {
+        image.parentElement.style.opacity = 1
+        renderImages(++i)
+      })
+    }
+  }
+
+  mountThumbs()
 
 })()
