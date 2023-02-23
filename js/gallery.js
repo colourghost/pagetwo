@@ -5,13 +5,14 @@ import { photos } from './data/photos.js'
   const section = document.querySelector('section')
   const thumbContainer = document.querySelector('.thumb-container')
 
-  const renderThumbs = _ => {
+  const mountThumbs = _ => {
     let markup = ''
-    photos.forEach(photo => {
-      markup += `<img src="images/gallery/${photo.title}.webp" width="${photo.width}" height="${photo.height}" alt="${photo.title}">`
+    photos.forEach((photo, index) => {
+      markup += `<img id="${index}" width="${photo.width}" height="${photo.height}" alt="${photo.title}">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
+    renderImages()
   }
 
   const addThumbListeners = _ => {
@@ -36,6 +37,17 @@ import { photos } from './data/photos.js'
     })
   }
 
-  renderThumbs()
+  const renderImages = (i = 0) => {
+    if (i < photos.length) {
+      let image = document.getElementById(i)
+      image.src = `images/gallery/${photos[i].title}.webp`
+      image.addEventListener('load', _ => {
+        image.style.opacity = 1
+        renderImages(++i)
+      })
+    }
+  }
+
+  mountThumbs()
 
 })()

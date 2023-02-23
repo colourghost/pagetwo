@@ -5,13 +5,14 @@ import { members } from './data/members.js'
   const section = document.querySelector('section')
   const thumbContainer = document.querySelector('.thumb-container')
 
-  const renderThumbs = _ => {
+  const mountThumbs = _ => {
     let markup = ''
-    members.forEach(member => {
-      markup += `<img src="images/profile/${member.name}.jpg" alt="${member.name}">`
+    members.forEach((member, index) => {
+      markup += `<img id="${index}" alt="${member.name}">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
+    renderImages()
   }
 
   const addThumbListeners = _ => {
@@ -45,6 +46,17 @@ import { members } from './data/members.js'
     })
   }
 
-  renderThumbs()
+  const renderImages = (i = 0) => {
+    if (i < members.length) {
+      let image = document.getElementById(i)
+      image.src = `images/profile/${members[i].name}.jpg`
+      image.addEventListener('load', _ => {
+        image.style.opacity = 1
+        renderImages(++i)
+      })
+    }
+  }
+
+  mountThumbs()
 
 })()

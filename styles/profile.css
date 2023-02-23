@@ -9,6 +9,8 @@
 }
 .thumb-container > img {
   width: 11.11%;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 @media (max-width: 1200px) {
   .thumb-container > img {
