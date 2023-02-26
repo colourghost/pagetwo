@@ -8,7 +8,7 @@ import { members } from './data/members.js'
   const mountThumbs = _ => {
     let markup = ''
     members.forEach((member, index) => {
-      markup += `<img id="${index}" alt="${member.name}">`
+      markup += `<img id="${index}" alt="${member.name}" width="2668" height="4000">`
     })
     thumbContainer.innerHTML = markup
     addThumbListeners()
