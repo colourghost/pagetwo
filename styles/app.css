@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin");
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: "Cabin", sans-serif;
+  font-family: "Cabin", Arial;
 }
 
 nav {

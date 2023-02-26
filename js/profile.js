@@ -28,7 +28,7 @@ import { members } from './data/members.js'
     div.classList.add('modal')
     div.innerHTML =
      `<div class="grid-container">
-        <img src="images/profile/${members[i].name}.jpg" alt="${members[i].name}">
+        <img src="images/profile/${members[i].name}.webp" alt="${members[i].name}">
         <div class="bio">
           <div class="name">${members[i].name}</div>
           <div class="birth">${members[i].birth}</div>
@@ -49,7 +49,7 @@ import { members } from './data/members.js'
   const renderImages = (i = 0) => {
     if (i < members.length) {
       let image = document.getElementById(i)
-      image.src = `images/profile/${members[i].name}.jpg`
+      image.src = `images/profile/${members[i].name}.webp`
       image.addEventListener('load', _ => {
         image.style.opacity = 1
         renderImages(++i)
