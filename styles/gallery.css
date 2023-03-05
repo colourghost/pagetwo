@@ -2,13 +2,18 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 0.52vw;
+}
+@media (max-width: 1200px) {
+  .thumb-container {
+    gap: 3vw;
+  }
 }
 .thumb-container > img {
   flex-grow: 1;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 220px;
+  height: 11.46vw;
   width: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 9px -5px;
@@ -16,9 +21,14 @@
   transition: opacity 0.3s;
   cursor: pointer;
 }
+@media (max-width: 1200px) {
+  .thumb-container > img {
+    height: 60vw;
+  }
+}
 
 .modal > img {
-  max-width: 96%;
-  max-height: 96%;
+  max-width: 94%;
+  max-height: 94%;
   border-radius: 20px;
 }

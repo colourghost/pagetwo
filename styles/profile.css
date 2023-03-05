@@ -22,7 +22,7 @@
 @media (max-width: 1200px) {
   .modal {
     align-items: flex-start;
-    padding: 2%;
+    padding: 3%;
   }
 }
 .modal .grid-container {
@@ -79,7 +79,7 @@
 }
 @media (max-width: 1200px) {
   .modal .grid-container > iframe {
-    width: 96vw;
-    height: 54vw;
+    width: 94vw;
+    height: 52.875vw;
   }
 }
