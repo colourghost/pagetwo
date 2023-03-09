@@ -34,7 +34,7 @@ import { members } from './data/members.js'
           <div class="birth">${members[i].birth}</div>
           <div class="nation">${members[i].nation}</div>
         </div>
-        <iframe src="https://www.youtube.com/embed/${members[i].id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/${members[i].id}?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>`
     section.appendChild(div)
     addModalListener(div)
