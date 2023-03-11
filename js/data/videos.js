@@ -5,6 +5,7 @@ function Video(title, id, image) {
 }
 
 export const videos = [
+  new Video('SET ME FREE', 'w4cTYnOPdNk', 'setmefree'),
   new Video('MOONLIGHT SUNRISE', 'cKlEE_EYuNM', 'moonlightsunrise'),
   new Video('Talk that Talk', 'k6jqx9kZgPM', 'talkthattalk'),
   new Video('POP!', 'f6YDKF0LVWw', 'pop'),

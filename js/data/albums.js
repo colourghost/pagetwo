@@ -7,6 +7,20 @@ function Album(title, release, art, tracklist) {
 
 export const albums = [
   new Album(
+    'READY TO BE',
+    'March 10, 2023',
+    'readytobe',
+    [
+      'SET ME FREE',
+      'MOONLIGHT SUNRISE',
+      'GOT THE THRILLS',
+      'BLAME IT ON ME • Dahyun',
+      'WALLFLOWER',
+      'CRAZY STUPID LOVE • Dahyun',
+      'SET ME FREE (ENG)'
+    ]
+  ),
+  new Album(
     'BETWEEN 1&2',
     'August 26, 2022',
     'between1&2',

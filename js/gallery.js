@@ -26,7 +26,7 @@ import { photos } from './data/photos.js'
   const renderModal = i => {
     const div = document.createElement('div')
     div.classList.add('modal')
-    div.innerHTML = `<img src="images/gallery/${photos[i].title}.webp" alt="${photos[i].title}">`
+    div.innerHTML = `<img src="images/gallery/${photos[i].title}.jpeg" alt="${photos[i].title}">`
     section.appendChild(div)
     addModalListener(div)
   }
@@ -40,7 +40,7 @@ import { photos } from './data/photos.js'
   const renderImages = (i = 0) => {
     if (i < photos.length) {
       let image = document.getElementById(i)
-      image.src = `images/gallery/${photos[i].title}.webp`
+      image.src = `images/gallery/${photos[i].title}.jpeg`
       image.addEventListener('load', _ => {
         image.style.opacity = 1
         renderImages(++i)
