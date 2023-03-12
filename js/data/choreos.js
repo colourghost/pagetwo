@@ -5,6 +5,7 @@ function Choreo(title, id, image) {
 }
 
 export const choreos = [
+  new Choreo('SET ME FREE', 'sXM5GwksZIY', 'setmefree'),
   new Choreo('MOONLIGHT SUNRISE', 'E1bGxyNLIdQ', 'moonlightsunrise'),
   new Choreo('Talk that Talk', '_hiR58brDz4', 'talkthattalk'),
   new Choreo('POP!', '_c4cKLYD28o', 'pop'),

@@ -108,5 +108,10 @@ iframe {
 }
 
 footer {
-  height: 3vw;
+  height: 8.2vw;
+}
+@media (max-width: 1200px) {
+  footer {
+    height: 80px;
+  }
 }
